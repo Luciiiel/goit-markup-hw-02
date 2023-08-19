@@ -209,6 +209,7 @@ body {
 }
 
 .section-filter button:hover {
+  cursor: pointer;
   background-color: var(--color-ocean);
   color: var(--color-white);
 }
