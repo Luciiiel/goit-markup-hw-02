@@ -84,7 +84,7 @@ body {
   background-color: var(--color-iris);
   cursor: pointer;
   border: 0;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .hero-button:hover {
@@ -184,6 +184,49 @@ body {
 
 .footer-main p {
   color: var(--color-cloud);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+/* portfolio.html */
+
+/* filter section */
+.section-filter ul {
+  list-style: none;
+}
+
+.section-filter button {
+  color: var(--color-iris);
+  font-family: 'roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  background-color: var(--color-cloud);
+  border-radius: 4px;
+  border: 0;
+}
+
+.section-filter button:hover {
+  background-color: var(--color-ocean);
+  color: var(--color-white);
+}
+
+/* portfolios section */
+.section-portfolios ul {
+  list-style: none;
+}
+
+.section-portfolios h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.section-portfolios p {
+  color: var(--color-slate);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
