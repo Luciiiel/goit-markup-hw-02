@@ -64,6 +64,10 @@ a {
 }
 
 /* navigation links */
+.nav {
+  display: inline-block;
+}
+
 .nav-link {
   color: var(--navyblue-color);
   font-family: 'roboto', sans-serif;
@@ -71,13 +75,24 @@ a {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+  display: inline-block;
+}
+
+.nav-list-item {
+  display: inline-block;
+  margin-right: 40px;
 }
 
 .nav-list {
   list-style: none;
+  display: inline-block;
 }
 
 /* address links */
+.address {
+  display: inline-block;
+}
+
 .address-link {
   color: var(--color-slate);
   text-decoration: none;
@@ -86,6 +101,14 @@ a {
   font-style: normal;
   line-height: 24px;
   letter-spacing: 0.32px;
+}
+
+.address-list {
+  display: inline-block;
+}
+
+.address-list-item {
+  display: inline-block;
 }
 
 .nav-link:hover,
