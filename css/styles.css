@@ -1,26 +1,60 @@
-:root {
-  --color-black: #000;
-  --color-white: #ffffff;
-  --color-cloud: #f4f4fd;
-  --color-navyblue: #2e2f42;
-  --color-slate: #434455;
-  --color-iris: #4d5ae5;
-  --color-ocean: #404bbf;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'roboto', sans-serif;
-  color: var(--color-navyblue);
+  color: var(--navyblue-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --black-color: #000;
+  --white-color: #ffffff;
+  --cloud-color: #f4f4fd;
+  --cornflower-color: #e7e9fc;
+  --navyblue-color: #2e2f42;
+  --slate-color: #434455;
+  --iris-color: #4d5ae5;
+  --ocean-color: #404bbf;
 }
 
 /* WEBSTUDIO logo link */
-.header-main-nav-span {
-  color: var(--color-iris);
+.nav-logo-span {
+  color: var(--iris-color);
 }
 
-.header-main-nav > a {
-  color: var(--color-navyblue);
-  text-decoration: none;
+.nav-logo {
+  color: var(--navyblue-color);
   font-family: 'raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -30,9 +64,8 @@ body {
 }
 
 /* navigation links */
-.header-main-nav-ul a {
-  color: var(--color-navyblue);
-  text-decoration: none;
+.nav-link {
+  color: var(--navyblue-color);
   font-family: 'roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -40,12 +73,12 @@ body {
   letter-spacing: 0.32px;
 }
 
-.header-main ul {
+.nav-list {
   list-style: none;
 }
 
 /* address links */
-.header-main-address a {
+.address-link {
   color: var(--color-slate);
   text-decoration: none;
   font-family: 'roboto', sans-serif;
@@ -55,18 +88,18 @@ body {
   letter-spacing: 0.32px;
 }
 
-.header-main-nav-ul a:hover,
-.header-main-address a:hover {
-  color: var(--color-ocean);
+.nav-link:hover,
+.address-link:hover {
+  color: var(--ocean-color);
 }
 
 /* hero section */
 .hero {
-  background-color: var(--color-navyblue);
+  background-color: var(--navyblue-color);
 }
 
-.hero-h1 {
-  color: var(--color-white);
+.hero-heading {
+  color: var(--white-color);
   text-align: center;
   font-size: 56px;
   font-weight: 700;
@@ -75,46 +108,46 @@ body {
 }
 
 .hero-button {
-  color: var(--color-white);
+  color: var(--white-color);
   font-family: 'roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
-  background-color: var(--color-iris);
+  background-color: var(--iris-color);
   cursor: pointer;
   border: 0;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px 32px;
 }
 
 .hero-button:hover {
-  background-color: var(--color-ocean);
+  background-color: var(--ocean-color);
 }
 
 /* first section */
-.section-about ul {
+.about-list {
   list-style: none;
 }
 
-.section-about h3 {
+.about-heading {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
 }
 
-.section-about p {
+.about-description {
   color: var(--color-slate);
-  font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 
 /* second section */
-.section-what-we-do h2 {
+.service-heading {
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -122,18 +155,17 @@ body {
   text-transform: capitalize;
 }
 
-.section-what-we-do ul {
+.service-list {
   list-style: none;
 }
 
 /* third section */
-.section-our-team {
-  background-color: var(--color-cloud);
+.team {
+  background-color: var(--cloud-color);
 }
 
-.section-our-team h2 {
+.team-heading {
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -141,38 +173,32 @@ body {
   text-transform: capitalize;
 }
 
-.section-our-team ul {
+.team-list {
   list-style: none;
 }
 
-.section-our-team h3 {
+.team-item-heading {
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
 }
 
-.section-our-team p {
+.team-item-description {
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
 }
 
 /* footer section */
-.footer-main {
-  background-color: var(--color-navyblue);
+.footer {
+  background-color: var(--navyblue-color);
 }
 
-.footer-main-span {
-  color: var(--color-iris);
-}
-
-.footer-main a {
-  color: var(--color-cloud);
+.footer-logo {
+  color: var(--cloud-color);
   text-decoration: none;
   font-family: 'raleway', sans-serif;
   font-size: 18px;
@@ -182,8 +208,12 @@ body {
   text-transform: uppercase;
 }
 
-.footer-main p {
-  color: var(--color-cloud);
+.footer-logo-span {
+  color: var(--iris-color);
+}
+
+.footer-description {
+  color: var(--cloud-color);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
@@ -192,42 +222,43 @@ body {
 /* portfolio.html */
 
 /* filter section */
-.section-filter ul {
+.filter-list {
   list-style: none;
 }
 
-.section-filter button {
-  color: var(--color-iris);
+.filter-item-button {
+  color: var(--iris-color);
   font-family: 'roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.64px;
-  background-color: var(--color-cloud);
+  background-color: var(--cloud-color);
   border-radius: 4px;
-  border: 0;
+  border: 1px solid var(--cornflower-color);
+  padding: 12px 24px;
 }
 
-.section-filter button:hover {
+.filter-item-button:hover {
   cursor: pointer;
-  background-color: var(--color-ocean);
-  color: var(--color-white);
+  background-color: var(--ocean-color);
+  color: var(--white-color);
 }
 
 /* portfolios section */
-.section-portfolios ul {
+.portfolio-list {
   list-style: none;
 }
 
-.section-portfolios h3 {
+.portfolio-item-heading {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
 }
 
-.section-portfolios p {
-  color: var(--color-slate);
+.portfolio-item-description {
+  color: var(--slate-color);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
