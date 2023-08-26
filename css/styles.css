@@ -114,6 +114,7 @@ a {
   border-radius: 4px;
   border: 0;
   padding: 16px 32px;
+  cursor: pointer;
 }
 
 .hero-button:hover {
